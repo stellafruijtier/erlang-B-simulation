@@ -71,11 +71,52 @@ This will automatically:
 ## 📈 Sample Output
 
 <pre>
-Simulation Summary:
-- Total calls simulated: 10830
-- Calls accepted: 7241
-- Calls blocked: 3589
-- Blocking probability (simulated): 33.1%
-- Server utilization: 79.4%
-- Erlang B (theoretical): 33.4%
+=== Part 1: Erlang-B Formula Calculations ===
+For offered load E = 10.0:
+  Servers needed for <10.0% blocking: 13 (actual blocking: 9.8071%)
+  Servers needed for <1.0% blocking: 18 (actual blocking: 0.9846%)
+  Servers needed for <0.1% blocking: 21 (actual blocking: 0.0969%)
+
+=== Part 2: Simulation Verification ===
+
+With 13 servers (target <10.0% blocking):
+  Simulated blocking: 9.7420%
+  Individual trial results: ['9.7000%', '9.7600%', '9.7500%', '9.7600%', '9.7400%']
+  Erlang-B prediction: 9.8071%
+
+With 18 servers (target <1.0% blocking):
+  Simulated blocking: 0.9760%
+  Individual trial results: ['0.9800%', '0.9700%', '0.9700%', '0.9800%', '0.9800%']
+  Erlang-B prediction: 0.9846%
+
+With 21 servers (target <0.1% blocking):
+  Simulated blocking: 0.0900%
+  Individual trial results: ['0.0900%', '0.1000%', '0.0900%', '0.0900%', '0.0900%']
+  Erlang-B prediction: 0.0969%
+
+=== Part 3: Erlang-2 Service Times ===
+
+Finding servers needed for <1% blocking with Erlang-2 service times...
+Servers needed for <1% blocking with Erlang-2 service: 19
+  (Compared to 18 servers for exponential service times)
 </pre>
+
+
+## 📦 Project Structure
+
+- `mmcc.py` : Main simulation scirpt - M/M/c/c and Erlang-2 service model
+- `READ.md` : Project overview and usage instructions
+
+
+## 🧪 Key Concepts Reinforced
+
+- Discrete-event simulation and event-driven logic
+- Poisson arrvials and exponential/Erlang service distribution
+- Blocking systems with no queue
+- Comparison of empirical vs. theoretical performance metrics
+- Binary search to find capacity targets
+
+
+## 📖 Acknowledgments
+
+This project was inspired by assignments and materials from Dan Myers, whose examples and explanations in simulation modeling helped guide this work for the **Simulation & Stochastic Modeling** class at Rollins College.
