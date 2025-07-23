@@ -37,13 +37,16 @@ In the Erlang B (or M/M/c/c) model:
 
 1. Clone the repository
 
-
-<pre> git clone https://github.com/stellafruijtier/erlang-B-simulation.git
-cd erlang-B-simulation </pre>
+<pre>
+git clone https://github.com/stellafruijtier/erlang-B-simulation.git
+cd erlang-B-simulation 
+</pre>
 
 2. Run the simulation
 
-<pre> python3 mmcc.py </pre>
+<pre> 
+python3 mmcc.py 
+</pre>
 
 This will automatically:
 - Calculate required servers for target blocking thresholds using the **Erlang B formula**
@@ -65,4 +68,14 @@ This will automatically:
 
 
 
+## 📈 Sample Output
 
+<pre>
+Simulation Summary:
+- Total calls simulated: 10830
+- Calls accepted: 7241
+- Calls blocked: 3589
+- Blocking probability (simulated): 33.1%
+- Server utilization: 79.4%
+- Erlang B (theoretical): 33.4%
+</pre>
