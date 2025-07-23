@@ -52,3 +52,17 @@ This will automatically:
 - Compare **theoretical vs. simulated blocking probabilities**
 - Print all results to the console
 
+
+## 🧩 Available Parameters
+
+| Parameter   | Description                                | Default |
+|------------|--------------------------------------------|---------|
+| `--lambda`  | Arrival rate (calls/jobs per unit time)    | 6.0     |
+| `--mu`      | Service rate (jobs served per server)      | 1.0     |
+| `--servers` | Number of available servers (`c`)          | 5       |
+| `--time`    | Total simulation time (virtual time units) | 100000  |
+| `--seed`    | Random seed for reproducibility            | None    |
+
+
+
+
