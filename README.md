@@ -43,7 +43,7 @@ cd erlang-B-simulation </pre>
 
 2. Run the simulation
 
-<pre>```python3 mmcc.py``` </pre>
+<pre> python3 mmcc.py </pre>
 
 This will automatically:
 - Calculate required servers for target blocking thresholds using the **Erlang B formula**
