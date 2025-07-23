@@ -37,8 +37,9 @@ In the Erlang B (or M/M/c/c) model:
 
 1. Clone the repository
 
-<pre> ```git clone https://github.com/stellafruijtier/erlang-B-simulation.git
-cd erlang-B-simulation``` </pre>
+
+<pre> git clone https://github.com/stellafruijtier/erlang-B-simulation.git
+cd erlang-B-simulation </pre>
 
 2. Run the simulation
 
