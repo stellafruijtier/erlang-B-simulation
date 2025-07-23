@@ -36,11 +36,13 @@ In the Erlang B (or M/M/c/c) model:
 ## 🛠️ How to run the simulation
 
 1. Clone the repository
-git clone https://github.com/stellafruijtier/erlang-B-simulation.git
-cd erlang-B-simulation
+
+<pre> ```git clone https://github.com/stellafruijtier/erlang-B-simulation.git
+cd erlang-B-simulation``` </pre>
 
 2. Run the simulation
-python3 mmcc.py
+
+<pre>```python3 mmcc.py``` </pre>
 
 This will automatically:
 - Calculate required servers for target blocking thresholds using the **Erlang B formula**
