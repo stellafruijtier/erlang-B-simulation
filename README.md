@@ -7,7 +7,7 @@ The simulation estimates the **blocking probability** under various arrival and 
 Developed as part of **Simulation & Stochastic Modeling** coursework at **Rollins College**
 
 
-## 📚 What is an Erlang B system?
+## What is an Erlang B system?
 
 In the Erlang B (or M/M/c/c) model:
 - **M (Markovian arrivals):** Interarrival times follow an exponential distribution
@@ -17,7 +17,7 @@ In the Erlang B (or M/M/c/c) model:
 - **Used in:** Telephony, call centers, network design, healthcare systems, and more
 
 
-## 🧠 What this simulation does
+## What this simulation does
 
 - Simulates arrivals and service completions in an M/M/c/c system
 - Tracks whether each arriving job is accepted or blocked
@@ -27,13 +27,13 @@ In the Erlang B (or M/M/c/c) model:
 - Includes a tool to find the **minimum number of servers** needed to achieve a given blocking threshold
 
 
-## ⚙️ Requirements
+## Requirements
 
 - Python 3.7 or higher
 - No external libraries needed (uses only standard Python modules)
 
 
-## 🛠️ How to run the simulation
+## How to run the simulation
 
 1. Clone the repository
 
@@ -56,7 +56,7 @@ This will automatically:
 - Print all results to the console
 
 
-## 🧩 Available Parameters
+## Available Parameters
 
 | Parameter   | Description                                | Default |
 |------------|--------------------------------------------|---------|
@@ -68,7 +68,7 @@ This will automatically:
 
 
 
-## 📈 Sample Output
+## Sample Output
 
 <pre>
 === Part 1: Erlang-B Formula Calculations ===
@@ -102,13 +102,13 @@ Servers needed for <1% blocking with Erlang-2 service: 19
 </pre>
 
 
-## 📦 Project Structure
+## Project Structure
 
 - `mmcc.py` : Main simulation scirpt - M/M/c/c and Erlang-2 service model
 - `READ.md` : Project overview and usage instructions
 
 
-## 🧪 Key Concepts Reinforced
+## Key Concepts Reinforced
 
 - Discrete-event simulation and event-driven logic
 - Poisson arrvials and exponential/Erlang service distribution
@@ -117,6 +117,6 @@ Servers needed for <1% blocking with Erlang-2 service: 19
 - Binary search to find capacity targets
 
 
-## 📖 Acknowledgments
+## Acknowledgments
 
 This project was inspired by assignments and materials from Dan Myers, whose examples and explanations in simulation modeling helped guide this work for the **Simulation & Stochastic Modeling** class at Rollins College.
